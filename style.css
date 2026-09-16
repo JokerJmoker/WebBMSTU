@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: azure;
+    font-size: 18px;
+    border-bottom: 2px solid grey;
+    height: 10vh;
+}
+
+main {
+    background-color: lightblue;
+    font-size: 16px;
+    min-height: 80vh;
+    padding: 10px;
+}
+
+footer {
+    background-color: azure;
+    font-size: 18px;
+    border-top: 2px solid grey;
+    min-height: 10vh;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.navigation {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.navigation__list {
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+}
+
+.navigation__list-item {
+    display: inline-block;
+    width: 20%;
+}
+
+.logo__image {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.about__text {
+    display: inline-block;
+    width: 30%;
+}
+
+.about__image-wrapper {
+    display: inline-block;
+    width: 45%;
+}
+
+.contacts__wrapper {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contacts__header {
+    padding-bottom: 30px;
+}
+
+.contacts__form-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contacts__form-input,
+.contacts__form-textarea {
+    margin-top: 10px;
+}
+
+.contacts__form-label,
+.contacts__form-input,
+.contacts__form-textarea {
+    width: 100%;
+}
+
+.contacts__form-submit {
+    background-color: blue;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.welcome-user {
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 15px;
+}
