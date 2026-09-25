@@ -1,5 +1,19 @@
 python -m http.server 8000
 
-http://localhost:8000/
+http://localhost/WebBMSTU/
 
 - на wsl
+
+- активируем виртуальное окружение из верхней папки
+source env/bin/activate
+
+- создаем ссылку для сайта
+sudo ln -s /home/jokerjmoker/dev/sem7/AZIS/WebBMSTU /var/www/html/WebBMSTU
+
+- даем права сервису (wsl запускается локально, так что безопасно)
+chmod o+x /home/jokerjmoker
+namei -l /home/jokerjmoker/dev/sem7/AZIS/WebBMSTU       - проверяем права
+ls -la /var/www/html/       -   проверяем ссылку
+
+- запускаем
+sudo service apache2 start
