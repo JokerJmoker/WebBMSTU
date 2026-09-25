@@ -23,13 +23,13 @@
     <div class="navigation">
         <ul class="navigation__list">
             <li class="navigation__list-item">
-                <a class="navigation__link" href="index.html">
+                <a class="navigation__link" href="index.php">
                     Главная страница
                 </a>
             </li>
 
             <li class="navigation__list-item">
-                <a class="navigation__link" href="contacts.html">
+                <a class="navigation__link" href="contacts.php">
                     Контакты
                 </a>
             </li>
@@ -88,8 +88,8 @@
     Подвал сайта.
 </footer>
 
-<!--<script src="script.js"></script>-->
-<script src="xss-test.js"></script>
+<script src="script.js"></script>
+<!--<script src="xss-test.js"></script>-->
 
 </body>
 </html>

@@ -23,13 +23,13 @@
     <div class="navigation">
         <ul class="navigation__list">
             <li class="navigation__list-item">
-                <a class="navigation__link" href="index.html">
+                <a class="navigation__link" href="index.php">
                     Главная страница
                 </a>
             </li>
 
             <li class="navigation__list-item">
-                <a class="navigation__link" href="contacts.html">
+                <a class="navigation__link" href="contacts.php">
                     Контакты
                 </a>
             </li>
@@ -111,7 +111,7 @@
 </main>
 
 <footer>
-    Подвал сайта.
+    <?php print("МГТУ им. Н.Э. Баумана © Все права защищены"); ?>
 </footer>
 
 </body>
