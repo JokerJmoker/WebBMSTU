@@ -45,7 +45,7 @@
             <h1>Связаться с нами</h1>
         </div>
 
-        <form class="contacts__form" action="/submit_form.php" method="post">
+        <form class="contacts__form" action="form.php" method="post" enctype="multipart/form-data">
 
             <label class="contacts__form-label" for="username">
                 Как вас зовут?
@@ -74,21 +74,32 @@
 
             <br><br>
 
+            <label class="contacts__form-input" for="avatar">
+                Ваш аватар:
+            </label>
+            
+            <input 
+                type="file" 
+                name="avatar"
+            >
+
+            <br><br>
+
             <input
                 class="contacts__form-submit"
                 type="submit"
                 value="Отправить"
             >
-            <p class="welcome-user"></p>
+            <!--<p class="welcome-user"></p>-->
         </form>
     </div>
 </main>
 
 <footer>
-    Подвал сайта.
+    <?php print("МГТУ им. Н.Э. Баумана © Все права защищены"); ?>
 </footer>
 
-<script src="script.js"></script>
+<!--<script src="script.js"></script>-->
 <!--<script src="xss-test.js"></script>-->
 
 </body>
