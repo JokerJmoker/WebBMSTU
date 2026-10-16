@@ -1,4 +1,5 @@
-# Настройка веб-сервера Apache + PHP + PostgreSQL в WSL
+```markdown
+# Настройка веб-сервера Apache + PHP + MySQL в WSL
 
 ## 1. Быстрый запуск через Python (для проверки)
 
@@ -12,11 +13,8 @@ python -m http.server 8000
 ## 2. Установка необходимых пакетов
 
 ```bash
-# Apache + PHP
-sudo apt install apache2 php libapache2-mod-php php-mysql
-
-# PostgreSQL
-sudo apt install postgresql postgresql-contrib
+# Apache + PHP + MySQL
+sudo apt install apache2 php libapache2-mod-php php-mysql mysql-server
 ```
 
 ---
@@ -62,30 +60,30 @@ ls -la /var/www/html/
 # Apache
 sudo service apache2 start
 
-# PostgreSQL
-sudo service postgresql start
+# MYSQL
+sudo service mysql start
 ```
 
 ---
 
-## 7. Работа с PostgreSQL
+## 7. Работа с MySQL
 
-### Вход в psql
+### Вход в mysql
 
 ```bash
-sudo -u postgres psql
+sudo mysql
 ```
 
 ### Учётные данные
 
 | Пользователь | Пароль     |
 |--------------|------------|
-| `postgres`   | `270961Ts` |
+| `root`       | `270961Ts` |
 | `joker`      | `joker`    |
 
+### Примеры SQL-запросов
 
-
-SELECT * FROM countries WHERE iso_code LIKE 'R%' - по совпадению
-SELECT count(*) FROM countries WHERE name LIKE '%а%'
-
-научиться работать с sql при опмощи php
+```sql
+SELECT * FROM countries WHERE iso_code LIKE 'R%';
+SELECT count(*) FROM countries WHERE name LIKE '%а%';
+```
